@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"> 
+    
+    <!-- Show on Map button -->
+    <Button android:id="@+id/btn_show_map"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Show Places on Map"
+       android:background="@color/orange"
+       android:textColor="@color/white"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="40dp"
+       android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+/>
+ 
+    
+    <!--  List view -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show_map"
+        android:dividerHeight="3dp"
+/>
+    
+    
+ 
+</RelativeLayout><!-- From: file:/C:/Users/Jaspreet/AndroidStudioProjects/GooglePlacesAndMaps/app/src/main/res/layout/activity_main.xml -->

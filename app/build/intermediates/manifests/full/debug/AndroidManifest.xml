@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="movie.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="movie.demo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="movie.demo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+ <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="movie.demo.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- CopyMainActivity -->
+
+        <activity
+            android:name="movie.demo.CopyMainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- SinglePlaceActivity -->
+
+        <activity
+            android:name="movie.demo.SinglePlaceActivity"
+            android:label="Place Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- PlacesMapActivity -->
+        <activity
+            android:name="movie.demo.PlacesMapActivity"
+            android:label="Near Places Map View"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <!-- FrontPage -->
+
+        <activity
+            android:name="movie.demo.FrontPage"
+            android:label="@string/title_activity_front_page"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- CinemaList -->
+
+        <activity
+            android:name="movie.demo.Cinemas"
+            android:label="@string/title_activity_cinemas"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- CinemaListCopy -->
+        <activity
+            android:name="movie.demo.CinemasCopy"
+            android:label="@string/title_activity_cinemas"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- ScreenShots -->
+
+        <activity
+            android:name="movie.demo.Screenshots"
+            android:label="@string/title_activity_screenshots"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- MovieDetails -->
+
+        <activity
+            android:name="movie.demo.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- MovieList -->
+
+        <activity
+            android:name="movie.demo.Bookit"
+            android:label="@string/title_activity_bookit"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC_FywdBCKMLXAAkMSla_hywflSqUeeQZc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- MovieTimings -->
+
+        <activity
+            android:name="movie.demo.MovieTimings"
+            android:label="@string/title_activity_movie_timings"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- MovieShow -->
+
+        <activity
+            android:name="movie.demo.MyShow"
+            android:label="@string/title_activity_my_show"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- SeatPlan -->
+
+        <activity
+            android:name="movie.demo.SeatPlan"
+            android:label="@string/title_activity_seat_plan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <!-- Bank -->
+        <activity
+            android:name="movie.demo.Bank"
+            android:label="@string/title_activity_bank"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- Credit -->
+        <activity
+            android:name="movie.demo.Credit"
+            android:label="@string/title_activity_credit"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+
+        <!-- NetBanking -->
+        <activity
+            android:name="movie.demo.NetBank"
+            android:label="@string/title_activity_net_bank"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+        <activity
+            android:name="movie.demo.BankLogin"
+            android:label="@string/title_activity_bank_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+        <activity
+            android:name="movie.demo.Submit"
+            android:label="@string/title_activity_submit"
+            android:screenOrientation="portrait"
+            android:theme="@style/customizedBar" >
+        </activity>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+    </application>
+
+</manifest>

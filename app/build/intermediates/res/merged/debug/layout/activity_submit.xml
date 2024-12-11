@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+     >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/welUser"
+         android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/welcome"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium"  />
+    
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_marginTop="40dp"
+         android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:text="@string/amt"
+       
+       />
+    
+    <TextView
+        android:id="@+id/amount"
+         android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textAmount" 
+        android:layout_below="@id/welUser"
+         
+         />
+    
+    <Button 
+        android:id="@+id/netPay"
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay"
+        android:layout_below="@id/textAmount"
+        android:onClick="payMethod"
+        style="@style/BankButton"
+        />
+
+    
+    
+</RelativeLayout>
+<!-- From: file:/C:/Users/Jaspreet/AndroidStudioProjects/GooglePlacesAndMaps/app/src/main/res/layout/activity_submit.xml -->

@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+ 
+    
+    <TableLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:stretchColumns="1"
+	 >
+     
+    <TextView 
+        android:id="@+id/bankName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        />
+    
+        <TableRow android:layout_marginTop="40dp">
+            <TextView android:text="@string/uid"
+                       android:textColor="@color/blue"/>
+            <EditText android:id="@+id/userId"
+                	  android:inputType="text"
+                	  android:maxLength="5"
+                	  android:hint="XXXXX"/>
+            
+        </TableRow>
+        
+           <TableRow  android:layout_marginTop="40dp">
+            <TextView android:text="@string/pass"
+                      android:textColor="@color/blue"/>
+            <EditText android:id="@+id/password"
+                      android:maxLength="4"
+                	  android:inputType="numberPassword"
+                	  android:hint="XXXX"/>
+            
+        </TableRow>
+        
+           <Button 
+        	android:layout_marginTop="40dp"
+        	android:id="@+id/submit"
+        	android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:text="@string/submit"
+        	android:onClick="submit"
+        	style="@style/BankButton"/>
+    
+    </TableLayout>
+    
+    
+     
+  
+</LinearLayout><!-- From: file:/C:/Users/Jaspreet/AndroidStudioProjects/GooglePlacesAndMaps/app/src/main/res/layout/activity_bank_login.xml -->

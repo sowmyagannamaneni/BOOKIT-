@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <TextView 
+            android:text="Choose One"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_marginTop="70dp"
+        	android:textColor="@color/blue"
+        	android:textStyle="italic"
+        	android:layout_gravity="center"
+        	 android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+        
+         <Button
+            android:id="@+id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="NEARBY CINEMAS"
+             android:onClick="nearByBtn"
+             android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+        
+        <Button
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="LIST OF MOVIES"
+            android:onClick="cinemaBtn"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+             />
+        
+       
+    </LinearLayout>

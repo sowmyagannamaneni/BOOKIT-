@@ -1,0 +1,127 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    >
+    
+    <TextView
+        android:id="@+id/details"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here are Your Show Timings"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+       />
+     
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/details"
+        android:layout_alignParentLeft="true"
+       />
+    
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/details"
+        android:layout_toRightOf="@+id/txtdate"
+        />
+    
+ 
+    
+    <TextView
+        android:id="@+id/ticket"
+        android:text="Select Ticket Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/txttime"
+        />
+    
+    <Spinner
+        android:id="@+id/timing"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticket"/>
+    
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select number of seats"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:layout_below="@id/timing"
+        android:textSize="15dp"
+	/>
+    <SeekBar
+        android:id="@+id/seekBar" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:max="10"
+        android:layout_below="@id/seat"/>
+    
+    <TextView
+        android:id="@+id/total_tickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/seekBar"
+        />
+    
+        
+        	<TextView
+        	    android:id="@+id/pay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="TOTAL PAYMENT ₹ "
+		        android:textStyle="italic"
+		        android:layout_marginTop="20dp"
+		         android:textColor="@color/red"
+		        android:layout_below="@id/total_tickets"
+		   />
+    	  <TextView
+		        android:id="@+id/paycount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:textColor="@color/red"
+		        android:layout_below="@id/total_tickets"
+		        android:layout_toRightOf="@id/pay"/>
+    	  
+       
+
+    
+    <Button
+            android:id="@+id/seats"
+            android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE YOUR SEATS"
+         	style="@style/BankButton"
+            android:onClick="chooseSeats"
+            android:layout_below="@id/paycount"
+             />
+    
+</RelativeLayout>
+</ScrollView>
+    <!-- From: file:/C:/Users/Jaspreet/AndroidStudioProjects/GooglePlacesAndMaps/app/src/main/res/layout/activity_my_show.xml -->

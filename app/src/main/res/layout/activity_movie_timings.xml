@@ -1,0 +1,74 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:scrollbars="vertical">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+ 
+   <Spinner
+       android:id="@+id/spinner"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="20dp"
+       android:drawSelectorOnTop="true"/>
+    
+       <TextView 
+           android:id="@+id/show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:text="Choose Show Timings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic"
+            android:textColor="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/spinner"
+         />
+    
+         <RadioGroup 
+                android:id="@+id/rbtn"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			 android:layout_marginTop="25dp"
+    			 android:layout_marginLeft="40dp"
+    			 android:layout_below="@id/show"
+    			android:orientation="vertical"
+    			>
+    			<RadioButton
+    			    android:id="@+id/btn1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			    	android:text="10:30 AM"/>
+			    <RadioButton
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="1:15 PM"/>
+			     <RadioButton
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="4:00 PM"/>
+			      <RadioButton
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="6:45 PM"/>
+			      <RadioButton
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="9:30 PM"/>
+    		</RadioGroup>
+    		
+         <Button
+             android:id="@+id/myshow"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="PROCEED"
+             style="@style/BankButton"
+             android:layout_below="@id/rbtn"
+             android:layout_marginTop="40dp"
+             android:onClick="displayMyShow"/>
+         </RelativeLayout>
+</ScrollView>
